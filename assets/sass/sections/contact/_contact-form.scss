@@ -1,0 +1,26 @@
+.contact {
+    text-align: center;
+
+    .container {
+        // justify-self: center;
+        display: block;
+        margin-top: 0px;
+        padding-top: 30px;
+    }
+
+    .intro-desc {
+        margin: -30px 0 30px;
+        grid-row: 2;
+    }
+
+    .ui.form {
+        grid-row: 3;
+        display: block;
+        width: 100%;
+        background:#fff;
+        padding: 50px 30px 30px;
+        max-width: 500px;
+        margin: 0 auto;
+        margin-bottom: 50px;
+    }
+}

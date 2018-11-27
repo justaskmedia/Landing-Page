@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="170" height="26" viewBox="0 0 170 26">
+  <defs>
+    <polygon id="logo-a" points="0 0 171.632 0 171.632 28.29 0 28.29"/>
+  </defs>
+  <g fill="none" fill-rule="evenodd" transform="translate(0 -1)">
+    <mask id="logo-b" fill="#fff">
+      <use xlink:href="#logo-a"/>
+    </mask>
+    <text fill="#FFF" font-family="PlayfairDisplay-Regular, Playfair Display" font-size="24" letter-spacing=".056" mask="url(#logo-b)">
+      <tspan x="0" y="22.29">abiliti</tspan>
+    </text>
+    <text fill="#FFF" font-family="PlayfairDisplay-Black, Playfair Display" font-size="26" font-weight="700" letter-spacing="-.072" mask="url(#logo-b)">
+      <tspan x="67.632" y="21.546">T</tspan> <tspan x="85.578" y="21.546" letter-spacing=".084">h</tspan> <tspan x="101.834" y="21.546" letter-spacing="-.179">e</tspan> <tspan x="114.473" y="21.546" letter-spacing=".084">ra</tspan> <tspan x="140.953" y="21.546" letter-spacing="-.358">p</tspan> <tspan x="156.065" y="21.546" letter-spacing=".084">y</tspan>
+    </text>
+  </g>
+</svg>

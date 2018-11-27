@@ -1,0 +1,157 @@
+.program {
+    padding-bottom: 65px;
+
+    .container {
+        @include media(767) {
+            grid-template-columns: 1fr 1fr;
+            grid-column-gap: 44px;
+        }
+    }
+
+    .program-heading {
+        @include font-size(4);
+        letter-spacing: 1.97px;
+        line-height: 48px;
+        text-align: center;
+        font-weight: bold;
+        margin-bottom: 0;
+
+        @include media(767) {
+            grid-column: 1 / span 2;
+            grid-row: 1;
+            text-align: left;
+        }
+    }
+
+    .program-details, .program-what-learned, .program-what-learned-expanded {
+        display: none;
+        
+        &.expanded {
+            display: block;
+            margin-bottom: 30px;
+        }
+
+        @include media(660) {
+            display: block;
+            margin-bottom: 30px;
+        }
+
+        @include media(767) {
+            margin-bottom: -25px;
+
+            ul {
+                margin: 0;
+                // padding:
+            }
+        }
+    }
+
+    .btn {
+        margin: 20px auto;
+    }
+
+    .pricing-details {
+        border: 1px solid $brandColor1;
+        padding: 5% 10% 0;
+        text-align: center;
+        max-width: 430px;
+        max-height: 175px;
+
+        @include media(767) {
+            grid-column: 2;
+            align-self: top;
+            margin-top: 20px;
+        }
+
+        @include media(920) {
+            grid-column: 2;
+            align-self: center;
+            justify-self: center;
+            grid-row: 3;
+            margin-top: 50px;
+            max-width: 100%;
+        }
+
+        .price {    
+            @include font-size(4.0);
+            letter-spacing: 0;
+            text-align: center;
+            line-height: 38px;
+            margin: 0;
+            padding: 0;
+        }
+
+        p {
+            margin: 0;
+            padding: 0;
+        }
+    }
+
+    &.program-alt {
+        background: $brandColor1;
+
+        .pricing-details {
+            border-color: $lightColor;
+        }
+    }
+}
+
+@include media(660) {
+    .mobile-only {
+        display: none;
+    }
+}
+
+@include media(767) {
+    .program-details {
+        grid-column: 1;
+        grid-row: 2;
+    } 
+    .program-what-learned {
+        grid-column: 1;
+        grid-row: 2;
+    }
+
+    .program .program-what-learned-expanded {
+        grid-column: 1 / span 2;
+        grid-row: 3;
+        display: flex;
+        flex-direction: row;
+        margin-top: 30px;
+
+        h3 {
+            column-span: all;
+        }
+    }
+}
+
+@include media(920) {
+    .program-details {
+        grid-column: 1;
+    } 
+    .program-what-learned {
+        grid-column: 2;
+    }
+
+    #insomnia  .program-details {
+        grid-column: 1 / span 2;
+        grid-row: 2;
+    }
+
+    #insomnia  .pricing-details {
+        grid-row: auto;
+        margin-top: 0;
+    }
+
+    .expanded-program-pricing {
+        grid-row: 4 !important;
+    }
+    
+}
+
+.pricing-walkthrough {
+    .container {
+        display: flex;
+        flex-direction: column;
+    }
+}

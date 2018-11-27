@@ -1,0 +1,95 @@
+.field-textarea {
+    height: 200px;
+}
+
+.ms-field {
+    position:relative; 
+  margin-bottom:45px; 
+}
+
+.ms-label {
+    color:rgb(121, 121, 121); 
+    @include font-size(1.6);
+    font-weight:normal;
+    position:absolute;
+    font-family: $brandFont1;
+    pointer-events:none;
+    left:5px;
+    top:10px;
+    transition:0.2s ease all; 
+}
+
+.ms-input {
+    @include font-size(1.6);
+    padding:10px 10px 10px 5px;
+    display:block;
+    width:100%;
+    border:none;
+    background:$brandColor2;
+    border-bottom:1px solid rgb(95, 95, 95);
+}
+
+.ms-input:focus { outline:none; }
+
+.ms-input:focus ~ .ms-label, .ms-input:valid ~ .ms-label, .ms-label-invalid     {
+    top: -20px;
+    font-size:12px;
+    color:$brandColor1;
+  }
+
+  .ms-label-invalid {
+    color:rgb(160, 0, 0);
+}
+
+
+  /* BOTTOM BARS ================================= */
+.bar  { position:relative; display:block; width:100%; }
+.bar:before, .bar:after   {
+  content:'';
+  height:2px; 
+  width:0;
+  bottom:1px; 
+  position:absolute;
+  background:$brandColor1; 
+  transition:0.2s ease all; 
+}
+.bar:before {
+  left:50%;
+}
+.bar:after {
+  right:50%; 
+}
+
+.ms-bar-invalid {
+    color:rgb(160, 0, 0);
+    border-color: rgb(160, 0, 0);
+}
+
+
+/* active state */
+.ms-input:focus ~ .bar:before, .ms-input:focus ~ .bar:after {
+  width:50%;
+}
+
+/* HIGHLIGHTER ================================== */
+.highlight {
+    position:absolute;
+    height:60%; 
+    width:100px; 
+    top:25%; 
+    left:0;
+    pointer-events:none;
+    opacity:0.5;
+  }
+  
+  /* active state */
+  .ms-input:focus ~ .highlight {
+    animation:inputHighlighter 0.3s ease;
+  }
+  
+  /* ANIMATIONS ================ */
+  @keyframes inputHighlighter {
+    from  { background:#5264AE; }
+    to    { width:0; background:transparent; }
+  }
+

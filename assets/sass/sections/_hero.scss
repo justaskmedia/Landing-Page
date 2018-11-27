@@ -1,0 +1,14 @@
+.hero {
+    background: $brandColor1;
+
+    &:after {
+       @include backgroundEnding();
+    }
+}
+
+.hero-sub {
+    background: $brandColor1;
+}
+
+@import 'home/hero-landing';
+@import 'programs/hero-programs';

@@ -1,0 +1,52 @@
+.covered {
+    background: $lightColor;
+
+    .container {
+        padding: 10px 5%;
+
+        @include media(767) {
+            grid-template-rows: 1fr auto;
+            grid-template-columns: 1fr 50px 75%;
+            padding: 20px 5% 60px; 
+        }
+    }
+
+    .covered-title {
+        @include media(767) {
+            grid-column: 1 / span 3;
+            grid-row: 1;
+            align-self: center;
+            text-align: center;
+            max-width: 744px;
+            margin: 15px auto;
+        }
+    }
+
+    .money-icon-container {
+        text-align: center;
+
+        @include media(767) {
+            grid-column: 1;
+            grid-row: 2;
+            align-self: center;
+        }
+
+        svg {
+            max-width: 200px;
+        }
+    }
+
+    .insurance-details {
+        @include media(767) {
+            grid-column: 3;
+            grid-row: 2;
+            align-self: center;
+        }
+    }
+
+    &:after {
+        @include backgroundEnding();
+        background-color:$brandColor1;
+        transform: rotate(180deg);
+    }
+}

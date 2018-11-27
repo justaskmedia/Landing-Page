@@ -1,0 +1,40 @@
+.btn {
+    background: $brandColor1;
+    color: $lightColor;
+    border-radius: 75px;
+    border: 0;
+    font-family: $brandFont2;
+    font-weight: 700;
+    text-transform: uppercase;
+    @include font-size (1.2);
+    letter-spacing: 3px;
+    text-align: center;
+    padding: 14px;
+    width: 250px;
+    cursor: pointer;
+
+    &:hover {
+        box-shadow: inset 0 0 1.5px $lightColor;
+    }
+
+    &.btn-ghost {
+        border: 1px solid $lightColor;
+        color: $lightColor;
+    }
+
+    &.btn-reverse-ghost {
+        border: 1px solid $brandColor1;
+        color:$brandColor1;
+        background: transparent;
+    }
+
+    &.btn-reverse {
+        background: $lightColor;
+        color:$brandColor1;
+
+        &:hover {
+            color: darken($brandColor1, 10%);
+            box-shadow: inset 0 0 1.5px $brandColor1;
+        }
+    }
+}

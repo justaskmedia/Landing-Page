@@ -1,0 +1,99 @@
+h1 {
+    font-family: $brandFont1;
+    @include font-size(3.8);
+    letter-spacing: 1.5px;
+    line-height: 46px;
+
+    @include media(767) {
+        @include font-size(5.4);
+        line-height: 67px;
+    }
+}
+
+h2 {
+    font-family: $brandFont1;
+    @include font-size(2.8);
+    line-height: 38px;
+    font-weight: normal;
+}
+
+h3 {
+    font-family: $brandFont1;
+    @include font-size(1.5);
+    line-height: 24px;
+    font-weight: bold;
+}
+
+.alt-heading-1 {
+    font-family: $brandFont2;
+    @include font-size(3.2);
+    line-height: 42px;
+    font-weight: bold;
+}
+
+.heading-light {
+    color:$brandColor2;
+}
+
+.heading-dark {
+    color:$brandColor1;
+}
+
+p, li {
+    @include font-size(1.6);
+    line-height: 22px;
+    font-family: $brandFont2;
+    color: $darkColor;
+}
+
+
+ul {
+
+    li {
+        margin-bottom: 20px;
+    }
+
+    &.dark {
+        li {
+            color:$darkColor; 
+        }
+    }
+
+    &.light {
+        li {
+            color:$lightColor; 
+        }
+    }
+}
+
+a {
+    text-decoration: none;
+    color: $brandColor1;
+    transition: all 0.2s ease-in-out;
+    font-weight: bold;
+    border-bottom: 0px solid $brandColor1;
+
+    &.dark {
+        border-bottom: 0px solid $brandColor1;
+
+        &:hover {
+            border-bottom: 1px solid $brandColor1;
+        }
+    }
+
+    &.light {
+        border-bottom: 0px solid $brandColor2;
+
+        &:hover {
+            border-bottom: 1px solid $brandColor2;
+        }
+    }
+}
+
+.dark {
+    color:$darkColor;
+}
+
+.light {
+    color:$lightColor;
+}

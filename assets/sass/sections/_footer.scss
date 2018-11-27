@@ -1,0 +1,37 @@
+.global-footer {
+    background: $darkColor;
+
+    .container {
+        padding: 20px 5%;
+
+        @include media(767) {
+            grid-template-rows: auto;
+            grid-template-columns: 2fr 1fr;
+        }
+    }
+
+    p {
+        @include font-size(1.2);
+    }
+
+    .company a {
+        font-family: $brandFont2;
+        @include font-size(1.2);
+        display: block;
+        padding: 10px 0;
+    }
+
+    .footer-menu {
+        @include media(767) {
+            grid-column: 2;
+            justify-self: end;
+        }
+    }
+
+    .about-ms {
+        @include media(767) {
+            grid-column: 1;
+            grid-row: 1;
+        }
+    }
+}

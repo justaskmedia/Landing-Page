@@ -1,0 +1,26 @@
+// Basics
+@import 'includes/config';
+@import 'includes/mixins';
+@import 'global/typography';
+@import 'global/inputs';
+@import 'global/buttons';
+@import 'global/general';
+
+// Sections
+@import 'sections/header'; 
+@import 'sections/hero'; 
+@import 'sections/footer'; 
+
+// Index
+@import 'sections/home/about-icbt'; 
+@import 'sections/home/covered'; 
+@import 'sections/home/features'; 
+@import 'sections/home/get-started'; 
+
+// Programs
+@import 'sections/programs/program';
+
+
+// Contact
+@import 'sections/contact/contact-form';
+@import 'sections/contact/success';

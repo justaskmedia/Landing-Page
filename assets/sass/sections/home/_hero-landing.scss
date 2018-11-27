@@ -1,0 +1,61 @@
+// Landing Page
+.hero-landing {
+    background: url('../images/hero-bg.jpg') top center no-repeat;
+    background-size: cover;
+    padding-top: 100px;
+    margin-top: -141px;
+
+    @include media(767) {
+        height: 100vh;
+        min-height: 698px;
+    }
+    
+    .container {
+        padding: 0 5%;
+
+        @include media(767) {
+            margin-top: 12vh;
+            grid-template-rows: auto 50px;
+            grid-template-columns: 550px;
+        }
+    }
+
+    .hero-title {
+        text-align: center;
+
+        @include media(767) {
+            text-align: left;
+        }
+    }
+
+    .hero-btnContainers {
+        text-align: center;
+        padding: 30px 0;
+        grid-row: 2;
+
+        @include media(767) {
+            text-align: left;
+            display: flex;
+        }
+
+        .btn {
+            margin: 0 auto;
+            align-self: center;
+            // padding-bottom: 32px;
+
+            &:first-of-type {
+                margin-bottom: 25px;
+            }
+            @include media(767) {
+                margin: 0 30px 0 0;
+                padding-bottom: 14px;
+
+                &:first-of-type {
+                    margin: 0 32px 0 0;
+                }
+            }
+            
+        }
+
+    }
+}

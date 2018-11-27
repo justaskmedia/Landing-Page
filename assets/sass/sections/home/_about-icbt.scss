@@ -1,0 +1,39 @@
+.about-icbt {
+    background: $lightColor;
+
+    .container {
+        padding: 10px 5%;
+
+        @include media(767) {
+            grid-template-rows: auto;
+            grid-template-columns: 1fr 75%;
+            padding: 20px 5% 60px; 
+        }
+    }
+
+    .about-details {
+        @include media(767) {
+            grid-column: 2;
+        }
+    }
+
+    .head-icon-container {
+        text-align: center;
+        grid-column: 1;
+
+        svg {
+            max-width: 200px;
+        }
+
+        @include media(767) {
+            padding: 0 50px 0 0;
+            align-self: center;
+        }
+    }
+
+    &:after {
+        @include backgroundEnding();
+        background-color:$brandColor1;
+        transform: rotate(180deg);
+    }
+}

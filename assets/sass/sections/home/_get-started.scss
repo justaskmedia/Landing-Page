@@ -1,0 +1,41 @@
+.get-started {
+    background: url('../images/how-it-works-bg.jpg') top left no-repeat;
+    background-size: cover;
+
+    @include media(767) {
+        background-position: top center;
+        min-height: 731px;
+        // height: 75vw;
+    }
+
+    .container {
+        padding: 20px 5% 60px;
+
+        @include media(767) {
+            // grid-template-rows: auto;
+            // grid-template-columns: 550px;
+            // align-content: center;	
+            // align-items: flex-start;
+            // max-width: 550px;
+            min-height: 731px;
+        }
+    }
+
+    .get-started-details {
+        display: flex;
+        flex-direction: column;
+        max-width: 550px;
+    }
+
+    .getStarted-title {
+        text-align: center;
+
+        @include media(767) {
+            text-align: left;
+        }
+    }
+
+    .btn {
+        margin-top: 20px;
+    }
+}

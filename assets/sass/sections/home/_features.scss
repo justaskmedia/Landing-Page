@@ -1,0 +1,74 @@
+.program-features {
+    background: $brandColor1;
+
+    .container {
+        padding: 10px 5%;
+        display: flex;
+        flex-direction: column;
+
+        @include media(767) {
+            padding-bottom: 60px;
+        }
+    }
+
+    .featured-title {
+        text-align: center;
+        margin: 0;
+    }
+
+    .featured-desc {
+        @include font-size(1.8);
+        text-align: center;
+        margin-bottom: 50px;
+    }
+
+    .feature {
+        margin: 20px 0;
+
+        @include media(767) {
+            display: grid;
+            grid-template-rows: auto;
+            grid-template-columns: 1fr 50px 1fr;
+            padding: 20px 5% 0px; 
+        }
+    }
+
+
+    .feature-details {
+        @include media(767) {
+            align-self: center;
+            max-width: 503px;
+        }
+    }
+    .feature-title {
+        margin-bottom: 0;
+        padding-bottom: 0;
+    }
+
+   
+    .feature-img {
+        margin-top: 20px;
+
+        @include media(767) {
+            grid-column: 3;
+            grid-row: 1;
+            align-self: center;
+        }
+    }
+
+    .feature-alt {
+        @include media(767) {
+
+            grid-template-columns: 1fr 50px 1fr;
+
+            .feature-details {
+                grid-column: 3;
+                max-width: 503px;
+            }
+
+            .feature-img {
+                grid-column: 1;
+            }
+        }
+    }
+}
