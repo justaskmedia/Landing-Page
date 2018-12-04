@@ -1,0 +1,22 @@
+.hero-guide {
+    background: url('../images/guide-hero-bg.jpg') top center no-repeat;
+    background-size: cover;
+    padding-top: 100px;
+    margin-top: -141px;
+    padding: 161px 5% 0;
+    text-align: center;
+
+    @include media(767) {
+        height: 630px;
+
+        .container {
+            grid-template-rows: 0.75fr 1fr;
+        }
+    }
+
+    h1 {
+        grid-row: 2;
+        max-width: 760px;
+        text-align: left;
+    }
+}

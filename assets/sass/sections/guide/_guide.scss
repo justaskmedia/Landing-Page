@@ -1,0 +1,216 @@
+.full-guide {
+    
+    .container {
+        @include media(767) {
+            grid-template-columns: 40% 1fr;
+            grid-column-gap: 44px;
+            padding: 30px 5%;
+        }
+    }
+
+    .guide-content {
+        @include media(767) {
+            grid-column: 2;
+            grid-row: 1;
+        }
+    }
+
+    .guide-title {
+        @include font-size(4);
+        letter-spacing: 1.97px;
+        line-height: 48px;
+        text-align: center;
+        font-weight: bold;
+        margin-bottom: 0;
+
+        h2 {
+            font-weight: bold;
+            
+            @include media(767) {
+                @include font-size(4.6);
+                line-height: 48px;
+                text-align: left;
+            }
+        }
+
+        @include media(767) {
+            grid-column: 1;
+            grid-row: 1;
+            text-align: left;
+            margin-right: 22px;
+        }
+    }
+
+
+    .guide p {
+        @include media(920) {
+            @include font-size(2.1);
+            line-height: 32px;
+        }
+    }
+
+    .guide {
+        padding: 20px 0;
+    }
+
+    .guide-alt {
+        background: $brandColor1;
+    }
+}
+
+@include media(767) {
+    .guide-details {
+        grid-column: 1;
+        grid-row: 2;
+    } 
+    .guide-what-learned {
+        grid-column: 1;
+        grid-row: 2;
+    }
+
+    .guide .guide-content-full {
+        grid-column: 1 / span 2;
+
+        p {
+            font-weight: 600;
+        }
+    }
+
+    .container {
+        &.progress-tracking-review {
+            grid-template-columns: 29.0224% 46.537% 24.439%;
+            grid-template-rows: 0.95fr 0.65fr 1fr; 
+            // grid-template-rows: 41.895% 23.076% 35.027%;
+            padding: 20px 5%;
+            grid-gap: 0;
+            max-width: 965px;
+            // height: 50vh; /* new */
+
+            p {
+                @include font-size(1.6);
+            }
+
+            .guide-image {
+                grid-column: 1 / span 3;
+                grid-row: 1 / span 3;
+            }
+
+            .completed-steps-walkthough {
+                grid-column: 1;
+                grid-row: 3;
+            }
+
+            .start-module-walkthrough {
+                grid-column: 3;
+                grid-row: 2 / span 3;
+                justify-self: end;
+                text-align: right;
+            }
+        }
+
+        &.article-review {
+            grid-template-columns: 10.466% 20.621% 28.082% 10.466% 30.362%;
+            grid-template-rows: 2.16fr 1.75fr 2.05fr 4fr;
+            // grid-template-rows: 3.3fr 1.75fr 3.35fr 4fr; 
+            // grid-template-rows: 41.895% 23.076% 35.027%;
+            padding: 20px 5% 60px;
+            grid-gap: 0;
+            // height: 50vh; /* new */
+
+          
+
+            p {
+                @include font-size(1.6);
+            }
+
+            .guide-image {
+                grid-column: 1 / span 5;
+                grid-row: 1 / span 4;
+            }
+
+            .return-home-walkthough {
+                grid-column: 1 / span 2;
+                grid-row: 2 / span 3;
+            }
+
+            .messaging-walkthrough {
+                grid-column: 2 / span 2;
+                grid-row: 4;
+            }
+
+            .call-247-walkthrough {
+                grid-column: 5;
+                grid-row: 3 / span 4;
+                text-align: right;
+            }
+        }
+
+    }
+}
+
+.container.progress-tracking-review {
+    @include media(845) {
+        grid-template-rows: 1.1fr 0.65fr 1fr;  
+    }
+    @include media(920) {
+        grid-template-rows: 0.85fr .55fr 1fr;  
+    }
+    @include media(960) {
+        grid-template-rows: 240px 140px 255px;
+    }
+}
+
+.container.article-review {
+
+    @include media(810) {
+        grid-template-rows: 2.36fr 1.75fr 2.15fr 4fr;  
+    }
+    @include media(845) {
+        grid-template-rows: 2.76fr 1.75fr 2.65fr 4fr;  
+    }
+    @include media(880) {
+        grid-template-rows: 3.16fr 1.75fr 3.15fr 4fr;  
+    }
+    @include media(910) {
+        grid-template-rows: 3.3fr 2fr 3.15fr 4fr; 
+    }
+    @include media(920) {
+        grid-template-rows: 2.46fr 1.25fr 2.65fr 4fr; 
+    }
+    @include media(960) {
+        max-width: 960px;
+        grid-template-rows: 178px 110px 177px 236px; 
+    }
+
+}
+
+@include media(920) {
+    .guide-details {
+        grid-column: 1;
+    } 
+    .guide-what-learned {
+        grid-column: 2;
+    }
+
+    #insomnia  .guide-details {
+        grid-column: 1 / span 2;
+        grid-row: 2;
+    }
+
+    #insomnia  .pricing-details {
+        grid-row: auto;
+        margin-top: 0;
+    }
+
+    .expanded-guide-pricing {
+        grid-row: 4 !important;
+    }
+    
+}
+
+.pricing-walkthrough {
+    .container {
+        display: flex;
+        flex-direction: column;
+    }
+}

@@ -631,6 +631,32 @@ img {
   }
 }
 
+.hero-guide {
+  background: url("../images/guide-hero-bg.jpg") top center no-repeat;
+  background-size: cover;
+  padding-top: 100px;
+  margin-top: -141px;
+  padding: 161px 5% 0;
+  text-align: center;
+}
+
+@media only screen and (min-width: 767px) {
+  .hero-guide {
+    height: 630px;
+  }
+  .hero-guide .container {
+    -ms-grid-rows: 0.75fr 1fr;
+        grid-template-rows: 0.75fr 1fr;
+  }
+}
+
+.hero-guide h1 {
+  -ms-grid-row: 2;
+  grid-row: 2;
+  max-width: 760px;
+  text-align: left;
+}
+
 .global-footer {
   background: #333333;
 }
@@ -1301,5 +1327,276 @@ img {
   .billing-details .credit-card-collection {
     margin-top: -16px;
   }
+}
+
+@media only screen and (min-width: 767px) {
+  .full-guide .container {
+    -ms-grid-columns: 40% 1fr;
+        grid-template-columns: 40% 1fr;
+    grid-column-gap: 44px;
+    padding: 30px 5%;
+  }
+}
+
+@media only screen and (min-width: 767px) {
+  .full-guide .guide-content {
+    -ms-grid-column: 2;
+    grid-column: 2;
+    -ms-grid-row: 1;
+    grid-row: 1;
+  }
+}
+
+.full-guide .guide-title {
+  font-size: 40px;
+  font-size: 4rem;
+  letter-spacing: 1.97px;
+  line-height: 48px;
+  text-align: center;
+  font-weight: bold;
+  margin-bottom: 0;
+}
+
+.full-guide .guide-title h2 {
+  font-weight: bold;
+}
+
+@media only screen and (min-width: 767px) {
+  .full-guide .guide-title h2 {
+    font-size: 46px;
+    font-size: 4.6rem;
+    line-height: 48px;
+    text-align: left;
+  }
+}
+
+@media only screen and (min-width: 767px) {
+  .full-guide .guide-title {
+    -ms-grid-column: 1;
+    grid-column: 1;
+    -ms-grid-row: 1;
+    grid-row: 1;
+    text-align: left;
+    margin-right: 22px;
+  }
+}
+
+@media only screen and (min-width: 920px) {
+  .full-guide .guide p {
+    font-size: 21px;
+    font-size: 2.1rem;
+    line-height: 32px;
+  }
+}
+
+.full-guide .guide {
+  padding: 20px 0;
+}
+
+.full-guide .guide-alt {
+  background: #006372;
+}
+
+@media only screen and (min-width: 767px) {
+  .guide-details {
+    -ms-grid-column: 1;
+    grid-column: 1;
+    -ms-grid-row: 2;
+    grid-row: 2;
+  }
+  .guide-what-learned {
+    -ms-grid-column: 1;
+    grid-column: 1;
+    -ms-grid-row: 2;
+    grid-row: 2;
+  }
+  .guide .guide-content-full {
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 2;
+    grid-column: 1 / span 2;
+  }
+  .guide .guide-content-full p {
+    font-weight: 600;
+  }
+  .container.progress-tracking-review {
+    -ms-grid-columns: 29.0224% 46.537% 24.439%;
+        grid-template-columns: 29.0224% 46.537% 24.439%;
+    -ms-grid-rows: 0.95fr 0.65fr 1fr;
+        grid-template-rows: 0.95fr 0.65fr 1fr;
+    padding: 20px 5%;
+    grid-gap: 0;
+    max-width: 965px;
+  }
+  .container.progress-tracking-review p {
+    font-size: 16px;
+    font-size: 1.6rem;
+  }
+  .container.progress-tracking-review .guide-image {
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 3;
+    grid-column: 1 / span 3;
+    -ms-grid-row: 1;
+    -ms-grid-row-span: 3;
+    grid-row: 1 / span 3;
+  }
+  .container.progress-tracking-review .completed-steps-walkthough {
+    -ms-grid-column: 1;
+    grid-column: 1;
+    -ms-grid-row: 3;
+    grid-row: 3;
+  }
+  .container.progress-tracking-review .start-module-walkthrough {
+    -ms-grid-column: 3;
+    grid-column: 3;
+    -ms-grid-row: 2;
+    -ms-grid-row-span: 3;
+    grid-row: 2 / span 3;
+    -ms-grid-column-align: end;
+        justify-self: end;
+    text-align: right;
+  }
+  .container.article-review {
+    -ms-grid-columns: 10.466% 20.621% 28.082% 10.466% 30.362%;
+        grid-template-columns: 10.466% 20.621% 28.082% 10.466% 30.362%;
+    -ms-grid-rows: 2.16fr 1.75fr 2.05fr 4fr;
+        grid-template-rows: 2.16fr 1.75fr 2.05fr 4fr;
+    padding: 20px 5% 60px;
+    grid-gap: 0;
+  }
+  .container.article-review p {
+    font-size: 16px;
+    font-size: 1.6rem;
+  }
+  .container.article-review .guide-image {
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 5;
+    grid-column: 1 / span 5;
+    -ms-grid-row: 1;
+    -ms-grid-row-span: 4;
+    grid-row: 1 / span 4;
+  }
+  .container.article-review .return-home-walkthough {
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 2;
+    grid-column: 1 / span 2;
+    -ms-grid-row: 2;
+    -ms-grid-row-span: 3;
+    grid-row: 2 / span 3;
+  }
+  .container.article-review .messaging-walkthrough {
+    -ms-grid-column: 2;
+    -ms-grid-column-span: 2;
+    grid-column: 2 / span 2;
+    -ms-grid-row: 4;
+    grid-row: 4;
+  }
+  .container.article-review .call-247-walkthrough {
+    -ms-grid-column: 5;
+    grid-column: 5;
+    -ms-grid-row: 3;
+    -ms-grid-row-span: 4;
+    grid-row: 3 / span 4;
+    text-align: right;
+  }
+}
+
+@media only screen and (min-width: 845px) {
+  .container.progress-tracking-review {
+    -ms-grid-rows: 1.1fr 0.65fr 1fr;
+        grid-template-rows: 1.1fr 0.65fr 1fr;
+  }
+}
+
+@media only screen and (min-width: 920px) {
+  .container.progress-tracking-review {
+    -ms-grid-rows: 0.85fr .55fr 1fr;
+        grid-template-rows: 0.85fr .55fr 1fr;
+  }
+}
+
+@media only screen and (min-width: 960px) {
+  .container.progress-tracking-review {
+    -ms-grid-rows: 240px 140px 255px;
+        grid-template-rows: 240px 140px 255px;
+  }
+}
+
+@media only screen and (min-width: 810px) {
+  .container.article-review {
+    -ms-grid-rows: 2.36fr 1.75fr 2.15fr 4fr;
+        grid-template-rows: 2.36fr 1.75fr 2.15fr 4fr;
+  }
+}
+
+@media only screen and (min-width: 845px) {
+  .container.article-review {
+    -ms-grid-rows: 2.76fr 1.75fr 2.65fr 4fr;
+        grid-template-rows: 2.76fr 1.75fr 2.65fr 4fr;
+  }
+}
+
+@media only screen and (min-width: 880px) {
+  .container.article-review {
+    -ms-grid-rows: 3.16fr 1.75fr 3.15fr 4fr;
+        grid-template-rows: 3.16fr 1.75fr 3.15fr 4fr;
+  }
+}
+
+@media only screen and (min-width: 910px) {
+  .container.article-review {
+    -ms-grid-rows: 3.3fr 2fr 3.15fr 4fr;
+        grid-template-rows: 3.3fr 2fr 3.15fr 4fr;
+  }
+}
+
+@media only screen and (min-width: 920px) {
+  .container.article-review {
+    -ms-grid-rows: 2.46fr 1.25fr 2.65fr 4fr;
+        grid-template-rows: 2.46fr 1.25fr 2.65fr 4fr;
+  }
+}
+
+@media only screen and (min-width: 960px) {
+  .container.article-review {
+    max-width: 960px;
+    -ms-grid-rows: 178px 110px 177px 236px;
+        grid-template-rows: 178px 110px 177px 236px;
+  }
+}
+
+@media only screen and (min-width: 920px) {
+  .guide-details {
+    -ms-grid-column: 1;
+    grid-column: 1;
+  }
+  .guide-what-learned {
+    -ms-grid-column: 2;
+    grid-column: 2;
+  }
+  #insomnia .guide-details {
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 2;
+    grid-column: 1 / span 2;
+    -ms-grid-row: 2;
+    grid-row: 2;
+  }
+  #insomnia .pricing-details {
+    grid-row: auto;
+    margin-top: 0;
+  }
+  .expanded-guide-pricing {
+    -ms-grid-row: 4 !important;
+    grid-row: 4 !important;
+  }
+}
+
+.pricing-walkthrough .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 /*# sourceMappingURL=landing.css.map */
