@@ -27,9 +27,13 @@
             font-weight: bold;
             
             @include media(767) {
-                @include font-size(4.6);
+                @include font-size(3.2);
                 line-height: 48px;
                 text-align: left;
+            }
+
+            @include media(960) {
+                @include font-size(4.2);
             }
         }
 
