@@ -22,7 +22,7 @@
 
     .hero-title {
         text-align: center;
-
+        grid-row: 1;
         @include media(767) {
             text-align: left;
         }
